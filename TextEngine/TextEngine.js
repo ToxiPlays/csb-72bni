@@ -251,7 +251,7 @@ export default class TextEngine extends Sprite {
   }
 
   *displayMeters() {
-    yield* this.writeAtAllignSizeRgbKernItalic(
+    /*yield* this.writeAtAllignSizeRgbKernItalic(
       "" + this.stage.vars.meters + "m",
       0,
       155,
@@ -262,7 +262,8 @@ export default class TextEngine extends Sprite {
       1,
       2,
       0
-    );
+    );*/
+    document.getElementById("meters").innerHTML = `${this.stage.vars.meters}m`;
   }
 
   *whenGreenFlagClicked() {
